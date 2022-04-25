@@ -1,0 +1,65 @@
+body {
+    background-color: #1c1d20;
+    color: #131314;
+}
+.container {
+    max-width: 1000px;
+    margin-top: 4em;
+    position: relative;
+}
+.hMenuC {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+.h {
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+.Line1, .Line2, .Line3, .overlayMenu {
+    transition: all 0.5s ease;
+}
+.hideLine2 {
+    opacity: 0;
+}
+.rotateplus45{
+    transform: rotate(45deg) translate(4px, 9px);
+}
+.rotateminus45{
+    transform: rotate(-45deg) translate(4px, -9px);
+}
+.overlayMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: royalblue;
+    opacity: 0;
+    text-align: center;
+}
+.showOverlayMenu {
+    opacity: 1;
+}
+li {
+    list-style: none;
+    font-size: 25px;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+li:hover {
+    opacity: 0.6;
+}
+.moveLiTagUp {
+    transform: translateY(-10px);
+}
